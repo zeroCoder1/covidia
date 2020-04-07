@@ -8,6 +8,9 @@
     <meta content="utf-8" http-equiv="encoding">
     <title>BENGALURU . LIVE</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../bower_components/paper-audio-player/paper-audio-player.html">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -15,9 +18,12 @@
 
 <body>
     <div class="mypanel">
-        <audio id="music" preload="all">
-            <source src="http://94.23.252.14:8067/stream">
-        </audio>
+        <!-- <audio id="music" preload="all">
+            <source src="http://shoutcast.aplus.by:9000/aplus_relax_24.aac">
+        </audio> -->
+
+
+
         <!-- <video autoplay muted loop id="myVideo"></video> -->
         <video autoplay muted loop src="" id="loopingVideo"> </video>
 
@@ -52,12 +58,18 @@
             });
         </script>
 
-        <script>
+        <!-- <script>
             let music = document.getElementById('music');
             music.play();
-        </script>
+        </script> -->
         <!-- http://shoutcast.aplus.by:9000/aplus_relax_24.aac -->
+        <!-- http://94.23.252.14:8067/stream -->
 
+        <div class="audioPlayer">
+            <paper-audio-player src="http://shoutcast.aplus.by:9000/aplus_relax_24.aac" title="Relax"
+                metadata="metadata" color="#000">
+            </paper-audio-player>
+        </div>
 
     </div>
 
