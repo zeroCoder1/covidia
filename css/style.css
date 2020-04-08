@@ -44,12 +44,11 @@
 }
 
 .welcomeText {
-  bottom: 30px;
+  bottom: 40px;
   position: fixed;
   font-family: 'Anton', sans-serif;
   margin: auto;
   text-align: center;
-  padding-top: 200px;
   text-transform: uppercase;
   width: 100%;
   mix-blend-mode: overlay;
