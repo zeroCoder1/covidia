@@ -77,7 +77,7 @@ var obj = {
     // get lastfm API info
     $.ajax({
 
-        url: "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistName + "&api_key=f2fdf80e5371efdc89a3ab2cbc670d77&format=json",
+        url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistName + "&api_key=f2fdf80e5371efdc89a3ab2cbc670d77&format=json",
 
         success: function(data) {
 
