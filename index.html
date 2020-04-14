@@ -13,6 +13,15 @@
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163606637-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163606637-1');
+    </script>
 
 </head>
 
@@ -45,7 +54,7 @@
 
             var myvid = document.getElementById('loopingVideo');
             var myvids = [
-                "resources/1.mp4", "resources/3.mp4", "resources/4.mp4", "resources/5.mp4", "resources/6.mp4","resources/7.mp4","resources/8.mp4","resources/9.mp4","resources/10.mp4",
+                "resources/1.mp4", "resources/3.mp4", "resources/4.mp4", "resources/5.mp4", "resources/6.mp4", "resources/7.mp4", "resources/8.mp4", "resources/9.mp4", "resources/10.mp4",
             ];
 
             var activeVideo = getRandomIndex(myvids.length);
@@ -66,20 +75,21 @@
         <!-- http://shoutcast.aplus.by:9000/aplus_relax_24.aac -->
         <!-- http://94.23.252.14:8067/stream -->
 
-       
+
         <div class="welcomeText">
             <h1 class="ml15">
                 <span class="word">Supr</span>
                 <span class="word">•</span>
                 <span class="word">Design</span>
-              </h1>
+            </h1>
 
         </div>
-       
+
         <div class="audioPlayer">
-            <paper-audio-player auto-play="true" preload="none" src="https://uk4.internet-radio.com/proxy/danceattackfm?mp=/stream;" title="Dance Attack" color="black">
+            <paper-audio-player auto-play="true" preload="none"
+                src="https://uk4.internet-radio.com/proxy/danceattackfm?mp=/stream;" title="Dance Attack" color="black">
             </paper-audio-player>
-        </div> 
+        </div>
 
 
     </div>
@@ -88,22 +98,22 @@
     <script src="js/settings.js"></script>
 
     <script>
-        anime.timeline({loop: true})
+        anime.timeline({ loop: true })
             .add({
-              targets: '.ml15 .word',
-              scale: [14,1],
-              opacity: [0,1],
-              easing: "easeOutCirc",
-              duration: 800,
-              delay: (el, i) => 800 * i
+                targets: '.ml15 .word',
+                scale: [14, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 800,
+                delay: (el, i) => 800 * i
             }).add({
-              targets: '.ml15',
-              opacity: 0,
-              duration: 1000,
-              easing: "easeOutExpo",
-              delay: 1000
+                targets: '.ml15',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
             });
-            </script>
+    </script>
 
 </body>
 
