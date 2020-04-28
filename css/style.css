@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 #loopingVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  /* Change position to absolute if you don't want it to take up the whole page */
+  left: 0px;
+  top: 0px;
 }
 
 .paper-audio-player-0 {
